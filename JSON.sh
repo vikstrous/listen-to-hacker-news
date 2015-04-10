@@ -1,3 +1,4 @@
+#!/bin/sh
 throw () {
   echo "$*" >&2
   exit 1

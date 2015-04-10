@@ -12,22 +12,22 @@ Supported platforms:
 Arch Linux
 ```
 
-(sorry)
-
 Setup
 ---
 
 ```
-pacman -S festival-english
-
-# test if it works:
-
-echo "success" | festival --tts
-
-# if the above produces "can't open /dev/dsp" then try this:
-
-echo "(Parameter.set 'Audio_Method 'Audio_Command) (Parameter.set 'Audio_Command \"aplay -q -c 1 -t raw -f s16 -r \$SR \$FILE\")" > ~/.festivalrc
+pacman -S espeak
 ```
+
+Check if it forks:
+
+```
+echo "success" | festival --tts
+```
+
+If you get an error take a look here:
+
+https://wiki.archlinux.org/index.php/Festival#Configuration
 
 Usage
 ---
